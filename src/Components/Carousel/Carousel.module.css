@@ -1,0 +1,75 @@
+/* Container for the carousel */
+.carousel-container {
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+/* Style for the carousel itself */
+.carousel .slide {
+  background: #fff; /* Background color for the slides */
+}
+
+/* Style for the images inside the carousel */
+.carousel .slide img {
+  width: 100%;
+  height: auto;
+  max-height: 500px; /* Adjust as needed */
+  object-fit: cover; /* Ensures the image covers the slide area */
+}
+
+/* Style for the navigation arrows */
+.carousel .control-arrow {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel .control-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+}
+
+/* Style for the previous arrow */
+.carousel .control-prev.control-arrow {
+  left: 10px; /* Adjust as needed */
+}
+
+/* Style for the next arrow */
+.carousel .control-next.control-arrow {
+  right: 10px; /* Adjust as needed */
+}
+
+/* Style for the arrow icons */
+.carousel .control-arrow:before {
+  color: #fff; /* Arrow color */
+  font-size: 20px; /* Adjust as needed */
+}
+
+/* Style for the dots (indicators) */
+.carousel .carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel .carousel-indicators li.selected {
+  background-color: #fff; /* White for selected indicator */
+}
